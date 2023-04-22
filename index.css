@@ -1,0 +1,108 @@
+*, 
+::before,
+::after{
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e1065;
+    padding: 1rem;
+}
+
+#form {
+    background-color: #5b21b6 ;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 0.5rem;
+}
+
+#form-title{
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.input-div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.form-input {
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: white;
+    background-color: #8b5cf6;
+}
+
+.form-input::placeholder {
+    color: #cbd5e1;
+} 
+
+.information {
+    margin: 0;
+    color: white;
+    display: none;
+}
+
+#phone-code {
+    color: white;
+    background-color: #8b5cf6;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+#Phone-container {
+    display: flex;
+    gap: 1rem;
+}
+
+#phone {
+    width: 100%;
+}
+
+#form-btn {
+    padding: 1rem;
+    color: white;
+    background-color: #22c55e;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+#form-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.correct {
+    outline: 2px solid #22c55e;
+}
+
+.incorrect {
+    outline: 2px solid #ef4444;
+}
+
+.show-information {
+    display: block;
+}
+
+
+
+
+@media  (min-width: 604px) {
+    #form {
+        width: 60%;
+    }
+} 
